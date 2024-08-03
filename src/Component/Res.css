@@ -1,0 +1,87 @@
+/* .table-responsive {
+    overflow-x: auto;
+}
+
+.custom-table th, .custom-table td {
+    white-space: nowrap;
+    text-align: left;
+}
+
+.custom-table td button {
+    white-space: normal;
+}
+
+@media (max-width: 1400px) {
+    .custom-table th, .custom-table td {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .custom-table th, .custom-table td {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.7rem;
+    }
+    .custom-table th:nth-child(5), .custom-table td:nth-child(5),
+    .custom-table th:nth-child(6), .custom-table td:nth-child(6),
+    .custom-table th:nth-child(7), .custom-table td:nth-child(7),
+    .custom-table th:nth-child(8), .custom-table td:nth-child(8) {
+        display: none;
+    }
+    #action {
+        width: 3rem;
+    }
+    #property {
+        width: 5.4rem;
+    }
+    #salerent {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.6rem;
+    }
+    .custom-table th:nth-child(4), .custom-table td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.45rem;
+    }
+    .custom-table th:nth-child(3), .custom-table td:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .custom-table th, .custom-table td {
+        font-size: 0.4rem;
+    }
+} */

@@ -1,0 +1,35 @@
+.header {
+    text-align: center;
+    justify-content: center;
+    margin-top: 5.8rem;
+    width: 100%;
+  }
+
+  .logo img{
+    width: 28rem;
+    height: 9rem;
+  }
+
+  @media (max-width: 800px) {
+    .header {
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .logo img{
+      width: 20rem;
+      height: 6rem;
+    }
+  }
+
+  .login-btn {
+    text-align: end;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+  .login-btn button {
+    background-color: aqua;
+    border-radius: 0.4rem;
+  }
