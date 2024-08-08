@@ -1,0 +1,804 @@
+.filter-main {
+    text-align: center;
+    padding: 0%;
+    margin-top: -2rem;
+    margin-bottom: 10rem;
+}
+
+.btn-filter {
+    width: 8rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .search-button,
+  .reset-button {
+    background-color: #ff3725;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .search-button:hover,
+  .reset-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .search-button:active,
+  .reset-button:active {
+    transform: translateY(1px);
+  }
+
+
+
+
+
+
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin: 1rem;
+  }
+  
+  
+  .table {
+    width: auto; /* Adjust width as needed */
+    min-width: 600px; /* Example minimum width */
+    border-collapse: collapse;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    white-space: nowrap; /* Example minimum width for columns */
+    padding: 6px; /* Adjust padding as needed */
+    text-align: center;
+    border: 1px solid #ccc; /* Example border */
+  }
+  
+  .custom-table th {
+    background-color: #f0f0f0;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .custom-table td {
+    background-color: #fff; /* Example cell background color */
+  }
+  
+
+  #btn-main-filter {
+    width: 10rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin: 0.1rem;
+  }
+
+
+@media (max-width:768px){
+
+  #connect-icon{
+    margin-left: -40rem;
+  }
+  #btn-main-filter {
+    width: 9rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin: 0.1rem;
+  }
+}
+
+
+
+
+
+
+
+  
+  @media (max-width: 767px) {
+    .button-container {
+      flex-direction: row;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .dropdown-content {
+      min-width: 100%;
+    }
+  }
+  /* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.dropdown-btn {
+  background-color: rgb(230, 123, 2);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+#search-btn {
+  background-color: rgb(0, 98, 8);
+  width: 80px;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#search-btn:hover {
+  background-color: rgb(0, 35, 206);
+}
+
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Adjust width as needed */
+  border-radius: 5px;
+  padding: 6px;
+  max-width: 9rem;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.checkbox-label span {
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-label:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .dropdown-content {
+      width: 100%;
+      left: 0;
+      max-width: 300px; /* Adjust max-width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .table-responsive table th:nth-child(n+5):nth-last-child(n+2),
+  .table-responsive table td:nth-child(n+5):nth-last-child(n+2) {
+    display: none; 
+  }
+
+  #custom-table-1 {
+    width: 100vw;
+  }
+
+  #bkb {
+    width: 1rem;
+  }
+  
+}
+
+
+/* Basic styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-select {
+    padding: 8px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow icon in modern browsers */
+}
+
+.dropdown-select:hover {
+    border-color: #999;
+}
+
+/* Style the options dropdown */
+.dropdown-select option {
+    padding: 8px 20px; /* Adjust padding as needed */
+}
+
+/* Make dropdown content width equal to button */
+.dropdown-select {
+    width: 150px; /* Adjust width to match your button */
+}
+
+/* Additional styling for the dropdown arrow (optional) */
+.dropdown-select::after {
+    content: '▼'; /* Custom dropdown arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the arrow does not interfere with select interaction */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown container styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Container for the "Select All" checkbox and label */
+.dropdown-select-container {
+  margin-bottom: 10px;
+}
+
+/* "Select All" checkbox styling */
+.dropdown-select-container input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Styling for the dropdown select */
+.dropdown-select {
+  width: 200px; /* Adjust width as needed */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  height: auto; /* Ensure dropdown height adjusts to content */
+  overflow: auto; /* Add scrollbar if options exceed specified size */
+}
+
+/* Styling for dropdown options */
+.dropdown-select option {
+  padding: 8px;
+}
+
+/* Custom arrow for the select dropdown (optional) */
+.dropdown-select::after {
+  content: ' ▼'; /* Custom dropdown arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Hide default arrow in Chrome */
+.dropdown-select::-webkit-outer-spin-button,
+.dropdown-select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Show custom arrow in IE and Edge */
+.dropdown-select::-ms-expand {
+  display: none;
+}
+
+/* Style for the "Select All" label */
+.dropdown-select-container label {
+  font-size: 14px; /* Adjust label font size */
+  color: #333; /* Adjust label color */
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+.filter-main {
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.dropdown-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80%;
+  max-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a,
+.dropdown-content label {
+  color: black;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover,
+.dropdown-content label:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn-filter {
+  width: auto;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.search-button, .reset-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.search-button:hover, .reset-button:hover {
+  opacity: 0.8;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.table-container {
+  margin-top: 30px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.custom-table thead tr {
+  background-color: #007BFF;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.custom-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.custom-table tbody tr:last-of-type {
+  border-bottom: 2px solid #007BFF;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.select-all-container {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f1f1f1;
+}
+
+
+
+.whatsapp-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.whatsapp-button a, .whatsapp-button button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.whatsapp-button button {
+  margin-left: 10px;
+}
+
+
+#btn-search {
+  height: 2.4rem;
+  width: 6.4rem;
+  background-color: green;
+  color: white;
+  border-radius: 0.4rem;
+  margin-right: 0.8rem;
+}
+
+#btn-reset {
+  height: 2.4rem;
+  width: 6.4rem;
+  background-color: red;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 384px) {
+  
+  #btn-main-filter{
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+  #whatsapp {
+    font-size: 0.9rem;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  #csv {
+    font-size: 0.9rem;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+
+
+
+@media (min-width: 450px) {
+  
+  #btn-div-icon {
+    text-align: end;
+  }
+}
+
+
+
+#type-floor {
+  width: 14rem;
+}
+
+#type-size {
+  width: 8rem;
+}
+
+#type-demand {
+  width: 10rem;
+}
+
+#type-detail {
+  width: 10rem;
+}
+
+#type-project {
+  width: 18rem;
+}
+
+#type-city {
+  width: 14.8rem;
+}
+
+
+@media (max-width: 800px){
+  #type-project {
+    width: 11.8rem;
+  }
+  #type-project-1 {
+    font-size: 12px;
+  }
+  #type-city {
+    width: 11rem;
+  }
+  #type-city-1 {
+    font-size: 12px;
+  }
+  #type-floor {
+    width: 10.4rem;
+  }
+  #type-floor-1 {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 425px){
+  #type-project {
+    width: 11rem;
+  }
+  #type-project-1 {
+    font-size: 12px;
+  }
+  #type-city {
+    width: 11rem;
+  }
+  #type-city-1 {
+    font-size: 12px;
+  }
+  #type-floor {
+    width: 11rem;
+  }
+  #type-floor-1 {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+.head-table {
+  position: sticky;
+  top: 0;
+}
+
+.location-size {
+  font-size: 0.7rem;
+}
+
+
+@media (max-width: 900px) {
+    #div-small {
+      font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+  #div-small {
+    font-size: 0.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-body {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  margin: auto;
+}
+
+.details-table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+.details-row {
+  display: table-row;
+  transition: background-color 0.3s;
+}
+
+.details-row:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.details-row:hover {
+  background-color: #e7f7ff;
+}
+
+.details-key, .details-value {
+  display: table-cell;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.details-key {
+  font-weight: 600;
+  font-size: 16px;
+  color: #606060;
+  width: 40%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details-value {
+  font-size: 16px;
+  color: #555;
+  width: 60%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details-link {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.details-link:hover {
+  color: #104a7b;
+}
+
+@media (max-width: 768px) {
+  .details-key, .details-value {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .details-key {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
